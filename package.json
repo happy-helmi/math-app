@@ -8,8 +8,7 @@
     "build": "echo 'No build step required'"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "passenger": "^6.0.17"
+    "express": "^4.18.2"
   },
   "engines": {
     "node": "16.x"
