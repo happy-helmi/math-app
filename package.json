@@ -1,0 +1,18 @@
+{
+  "name": "mathe-app",
+  "version": "1.0.0",
+  "description": "Eine spielerische Mathe-App für Kinder",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "passenger": "^6.0.17"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "license": "MIT"
+}
