@@ -1,17 +1,19 @@
 {
   "name": "mathe-app",
   "version": "1.0.0",
-  "description": "Eine spielerische Mathe-App für Kinder",
-  "main": "server.js",
+  "private": true,
   "scripts": {
     "start": "node server.js",
-    "build": "echo 'No build step required'"
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
-    "express": "^4.18.2"
-  },
-  "engines": {
-    "node": "16.x"
-  },
-  "license": "MIT"
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  }
 }
