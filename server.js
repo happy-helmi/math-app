@@ -1,18 +1,18 @@
-const express = require("express");
-const path = require("path");
+const express = require('express');
+const next = require('next');
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+const app = next({ dev: false });
+const handle = app.getRequestHandler();
 
-// Statische Dateien aus dem React-Build-Ordner bereitstellen
-app.use(express.static(path.join(__dirname, "build")));
+app.prepare().then(() => {
+    const server = express();
 
-// Alle anderen Routen auf `index.html` weiterleiten
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
-});
+    server.all('*', (req, res) => {
+        return handle(req, res);
+    });
 
-// Server starten
-app.listen(PORT, () => {
-  console.log(`🚀 Server läuft auf http://localhost:${PORT}`);
+    server.listen(3000, (err) => {
+        if (err) throw err;
+        console.log('> Ready on http://localhost:3000');
+    });
 });
