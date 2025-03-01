@@ -1,1 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  background: #0070f3;
+  color: white;
+  padding: 10px;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: #eee;
+}
 
