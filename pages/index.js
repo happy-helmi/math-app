@@ -1,10 +1,10 @@
-function Home() {
-    return (
-        <div>
-            <h1>Willkommen zur Mathe-App!</h1>
-            <p>Hier kannst du Mathematik spielerisch lernen.</p>
-        </div>
-    );
-}
+import Layout from '../components/Layout';
 
-export default Home;
+export default function Home() {
+  return (
+    <Layout>
+      <h1>Willkommen zur Mathe-App!</h1>
+      <p>Hier kannst du Mathematik spielerisch lernen.</p>
+    </Layout>
+  );
+}
