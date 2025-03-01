@@ -1,16 +1,11 @@
-import Link from 'next/link';
+import Layout from '../components/Layout';
 
 export default function Home() {
   return (
-    <div>
+    <Layout>
       <h1>Willkommen zur Mathe-App!</h1>
       <p>Hier kannst du Mathematik spielerisch lernen.</p>
-      <h2>Wähle ein Spiel:</h2>
-      <ul>
-        <li><Link href="/quiz">Mathe-Quiz</Link></li>
-        <li><Link href="/dragdrop">Drag & Drop</Link></li>
-        <li><Link href="/rechnen">Rechenaufgaben</Link></li>
-      </ul>
-    </div>
+      <img src="/images/math-icons.png" alt="Mathe Icons" style={{ width: '100%', maxWidth: '400px', margin: '0 auto', display: 'block' }} />
+    </Layout>
   );
 }
