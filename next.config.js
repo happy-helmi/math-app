@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  distDir: "httpdocs", // Stellt sicher, dass die Build-Dateien in /httpdocs generiert werden
-  trailingSlash: true // Sorgt für korrekte statische Routen
+  distDir: "/var/www/vhosts/determined-dubinsky.5-35-241-144.plesk.page/httpdocs",
+  trailingSlash: true
 };
 
 module.exports = nextConfig;
