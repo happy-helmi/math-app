@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
+    "export": "next export -o /var/www/vhosts/determined-dubinsky.5-35-241-144.plesk.page/httpdocs",
     "deploy": "npm run build && npm run export"
   },
   "dependencies": {
