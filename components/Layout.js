@@ -1,12 +1,12 @@
-import Header from './Header';
-import Footer from './Footer';
+import Navbar from './Navbar';
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
-    <div className="container">
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </div>
+    <>
+      <Navbar />
+      <main className="container">{children}</main>
+    </>
   );
-}
+};
+
+export default Layout;
