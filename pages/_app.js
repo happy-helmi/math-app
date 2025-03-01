@@ -1,10 +1,5 @@
-import "../styles/global.css";  // ✅ Globales CSS importieren
-import Layout from "../components/Layout"; // Optional: Layout einbinden
+import '../styles/global.css';
 
-export default function MyApp({ Component, pageProps }) {
-  return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  );
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
